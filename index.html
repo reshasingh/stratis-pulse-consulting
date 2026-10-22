@@ -331,6 +331,54 @@
     font-size:0.85rem;border-top:1px solid var(--line-dark);
   }
   footer a{color:#B7C0D1;text-decoration:none;}
+
+/* 2026 visual redesign: editorial light-mode consulting identity */
+:root{--ink:#15253A;--ink-2:#20354B;--paper:#F6F7F4;--panel:#FFFFFF;--slate:#506173;--slate-light:#7D8C9A;--signal:#127D73;--brass:#C79A4D;--line:#E0E7E5;--line-dark:#D7E4E1}
+body{background:var(--paper);color:var(--slate);font-family:'IBM Plex Sans',sans-serif}
+h1,h2,h3,h4{letter-spacing:-.035em}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid #E5ECEA;box-shadow:0 2px 18px rgba(16,44,58,.035)}
+.brand span{color:var(--ink)}
+nav.links a{color:#4A5B6C}
+nav.links a:hover{color:var(--signal)}
+.nav-cta{background:var(--ink);color:white!important;border-radius:7px}
+.nav-cta:hover{background:var(--signal);color:white!important}
+.menu-btn span{background:var(--ink)}
+.hero{background:linear-gradient(125deg,#EDF5F2 0%,#F7F8F5 55%,#EAF2F1 100%);color:var(--ink);padding:6.2rem 0 0}
+.hero-grid{grid-template-columns:1.1fr .9fr;gap:5rem;align-items:center;padding-bottom:5.4rem}
+.hero h1{color:var(--ink);font-size:clamp(2.9rem,5.2vw,5rem);line-height:1.07;letter-spacing:-.055em;max-width:750px}
+.hero h1 em{font-style:normal;color:var(--signal)}
+.hero .lede{color:#455C6C;font-size:1.12rem;line-height:1.8;max-width:600px}
+.hero-eyebrow{color:var(--signal);font-size:.74rem;letter-spacing:.2em;font-weight:700;margin-bottom:1.4rem}
+.hero-note{color:#627B86!important;font-size:.82rem}
+.btn{border-radius:7px!important}
+.btn-solid{background:var(--signal)!important;color:#fff!important}
+.btn-ghost{color:var(--ink)!important;border-color:#AFC5C0!important}
+.strategy-visual{background:#183448;color:#fff;min-height:430px;border-radius:18px;padding:2.1rem;box-shadow:0 24px 58px rgba(22,55,62,.17);display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.strategy-visual:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-110px;top:40px;box-shadow:0 0 0 65px rgba(255,255,255,.025),0 0 0 130px rgba(255,255,255,.018)}
+.visual-top,.visual-foot{display:flex;justify-content:space-between;gap:12px;position:relative;font-size:.65rem;letter-spacing:.15em;color:#A7D4CC}
+.visual-mark{color:#F1C987}
+.visual-heading{position:relative;font-family:'Fraunces',serif;font-size:clamp(1.8rem,2.7vw,2.8rem);line-height:1.2;color:#fff;margin:2rem 0}
+.visual-heading em{color:#B3DCD3;font-style:normal}
+.visual-track{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:2rem}
+.visual-step{border-top:2px solid #56B9A9;padding-top:1rem;display:flex;flex-direction:column;gap:.35rem}
+.visual-step span{font-family:'IBM Plex Mono',monospace;color:#9FCFC5;font-size:.72rem}
+.visual-step strong{font-size:.9rem;color:#fff}
+.visual-step small{font-size:.7rem;color:#BCD1D6;line-height:1.4}
+.metrics-strip{background:#fff!important;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metric{border-color:var(--line)!important}
+.metric .num{color:var(--signal)!important}
+.metric .label{color:#657786!important}
+.section{padding-top:6rem;padding-bottom:6rem}
+.section-head h2{font-size:clamp(2rem,3.2vw,3.25rem);line-height:1.16}
+.case-card{background:#fff;border:1px solid #E0E8E5;border-radius:13px;box-shadow:0 10px 28px rgba(17,53,62,.04);transition:transform .2s ease,box-shadow .2s ease}
+.case-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(17,53,62,.09)}
+.case-card .stat{color:var(--signal)!important}
+.method-row{border-color:#DCE5E1!important}
+.method-row .n{color:var(--signal)!important}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.strategy-visual{min-height:360px}.hero{padding-top:4rem}}
+@media(max-width:860px){nav.links{background:#fff;border-top:1px solid var(--line)}nav.links a{color:var(--ink)}}
+@media(max-width:550px){.strategy-visual{padding:1.4rem;min-height:360px}.visual-track{gap:.35rem}.visual-step strong{font-size:.76rem}.hero h1{font-size:2.8rem}}
+
 </style>
 </head>
 <body>
@@ -359,24 +407,19 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <h1>Read the pulse of your operation. Then rebuild it.</h1>
-          <p class="lede">Stratis Pulse Consulting finds exactly where process, technology, and people are losing ground — and re-engineers the system with automation that pays for itself in months, not years.</p>
+          <div class="hero-eyebrow">STRATEGY · OPERATIONS · AI TRANSFORMATION</div><h1>Make transformation <em>work in the real world.</em></h1>
+          <p class="lede">StratisPulse helps ambitious organizations turn operational complexity into clarity, practical AI adoption, and measurable execution. Strategy grounded in what it takes to deliver.</p>
           <div class="hero-ctas">
-            <a href="#contact" class="btn btn-solid">Contact us</a>
-            <a href="#impact" class="btn btn-ghost">See the results</a>
+            <a href="#contact" class="btn btn-solid">Discuss your challenge</a>
+            <a href="#impact" class="btn btn-ghost">Explore the evidence</a>
           </div>
-          <p class="hero-note">Typical engagements go live in 4–8 weeks — not a six-month discovery phase.</p>
+          <p class="hero-note">From diagnosis and technology decisions to delivery governance and lasting adoption.</p>
         </div>
-        <div class="pulse-graphic" aria-hidden="true">
-          <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="65" x2="480" y2="65" stroke="#1C2540" stroke-width="1"/>
-            <line x1="0" y1="130" x2="480" y2="130" stroke="#1C2540" stroke-width="1"/>
-            <line x1="0" y1="195" x2="480" y2="195" stroke="#1C2540" stroke-width="1"/>
-            <path class="pulse-line" d="M0,150 L60,150 L85,150 L100,60 L120,220 L140,150 L200,150 L225,150 L245,90 L265,150 L320,150 L340,150 L360,40 L380,150 L480,150" />
-            <circle class="pulse-dot" style="animation-delay:1.4s" cx="100" cy="60" r="4.5" fill="#00A78E"/>
-            <circle class="pulse-dot" style="animation-delay:1.9s" cx="245" cy="90" r="4.5" fill="#C9A24B"/>
-            <circle class="pulse-dot" style="animation-delay:2.4s" cx="360" cy="40" r="4.5" fill="#00A78E"/>
-          </svg>
+        <div class="strategy-visual" aria-label="Transformation roadmap">
+          <div class="visual-top"><span>THE TRANSFORMATION BRIEF</span><span class="visual-mark">SP / 01</span></div>
+          <div class="visual-heading">From complexity<br><em>to capability.</em></div>
+          <div class="visual-track"><div class="visual-step"><span>01</span><strong>Understand</strong><small>Diagnose the friction</small></div><div class="visual-step"><span>02</span><strong>Decide</strong><small>Prioritize the value</small></div><div class="visual-step"><span>03</span><strong>Deliver</strong><small>Build, adopt, improve</small></div></div>
+          <div class="visual-foot"><span>OPERATIONAL CLARITY</span><span>→</span><span>EXECUTION AT SCALE</span></div>
         </div>
       </div>
     </div>
@@ -384,8 +427,8 @@
       <div class="wrap metrics-inner">
         <div class="metric"><div class="num" data-count="22" data-suffix="+">22+</div><div class="label">Years leading global operations</div></div>
         <div class="metric"><div class="num" data-count="250" data-suffix="+">250+</div><div class="label">Team members led across 3 continents</div></div>
-        <div class="metric"><div class="num">250+</div><div class="label">People led in prior global operations roles</div></div>
-        <div class="metric"><div class="num" data-count="58" data-suffix="%">58%</div><div class="label">Cut in per-transaction processing cost</div></div>
+        <div class="metric"><div class="num">99.28%</div><div class="label">Historical SLA after service recovery</div></div>
+        <div class="metric"><div class="num">~93%</div><div class="label">Configured AI order-processing success</div></div>
       </div>
     </div>
   </section>
@@ -421,7 +464,7 @@
         </div>
         <div class="case-card" data-cat="all">
           <h3 style="font-size:1.08rem;color:var(--ink);">Manual work eating hours your team doesn't have?</h3>
-          <p><strong style="color:var(--slate);">AI &amp; process automation.</strong> Chatbots, CRM automations, and OCR/LLM extraction pipelines — built and shipped, not just recommended.</p>
+          <p><strong style="color:var(--slate);">AI &amp; process automation.</strong> Identify and govern practical chatbot, CRM, OCR, and LLM workflow initiatives with the right engineering partners.</p>
         </div>
         <div class="case-card" data-cat="all">
           <h3 style="font-size:1.08rem;color:var(--ink);">Need senior operations judgment without a full-time hire?</h3>
@@ -479,30 +522,15 @@
     <div class="wrap">
       <div class="section-head">
         <div class="kicker">THE ENGAGEMENT MODEL</div>
-        <h2>Four stages. One accountable strategist.</h2>
-        <p>Most advisory work stops at the recommendation. This doesn't — our approach connects diagnosis, delivery governance, and adoption.</p>
+        <h2>Five moves. One connected transformation.</h2>
+        <p>Advice only matters when it becomes operational capability. The work connects diagnosis, decisions, delivery, and adoption.</p>
       </div>
       <div class="method-list">
-        <div class="method-row">
-          <div class="n">01</div>
-          <div><span class="tag">Diagnose</span><h3>Operational diagnostics</h3></div>
-          <p>We map the workflow end to end to find exactly where time, money, and service quality are leaking — then rank the fixes by impact, not guesswork.</p>
-        </div>
-        <div class="method-row">
-          <div class="n">02</div>
-          <div><span class="tag">Evaluate</span><h3>Vendor &amp; technology evaluation</h3></div>
-          <p>Build-vs-buy modeling and unbiased platform scoring, so you stop paying for software that isn't earning its keep.</p>
-        </div>
-        <div class="method-row">
-          <div class="n">03</div>
-          <div><span class="tag">Automate</span><h3>Intelligent automation &amp; AI</h3></div>
-          <p>Chatbots, CRM workflows, and OCR/LLM extraction pipelines that take over the repetitive work — delivered through coordinated business and engineering teams.</p>
-        </div>
-        <div class="method-row" style="border-bottom:none;">
-          <div class="n">04</div>
-          <div><span class="tag">Operate</span><h3>Pipeline &amp; SLA operations</h3></div>
-          <p>CRM architecture, lead routing, and SLA ownership that keep the gains after the engagement ends — no drift back to old habits.</p>
-        </div>
+        <div class="method-row"><div class="n">01</div><div><span class="tag">Diagnose</span><h3>Find the real constraint</h3></div><p>Map workflows, customer friction, service gaps, and the data behind them before recommending a fix.</p></div>
+        <div class="method-row"><div class="n">02</div><div><span class="tag">Design</span><h3>Shape the right solution</h3></div><p>Evaluate process, people, vendors, and AI options against practical value, risk, and readiness.</p></div>
+        <div class="method-row"><div class="n">03</div><div><span class="tag">Align</span><h3>Make execution possible</h3></div><p>Bring business, finance, technology, and delivery teams together around decisions and ownership.</p></div>
+        <div class="method-row"><div class="n">04</div><div><span class="tag">Execute</span><h3>Lead delivery and adoption</h3></div><p>Establish governance, manage dependencies, validate outcomes, and support teams through change.</p></div>
+        <div class="method-row" style="border-bottom:none"><div class="n">05</div><div><span class="tag">Advance</span><h3>Measure and improve</h3></div><p>Turn early wins into repeatable performance through metrics, operating cadence, and continuous improvement.</p></div>
       </div>
     </div>
   </section>
